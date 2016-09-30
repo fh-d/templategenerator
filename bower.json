@@ -1,0 +1,21 @@
+{
+  "name": "templategenerator",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "frankirito <francoishenri.dupuich@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/frankirito/templategenerator",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
