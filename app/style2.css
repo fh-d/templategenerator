@@ -1,0 +1,171 @@
+/* Sample color palette */
+
+html,
+body,
+.col-md-12,
+.row {
+    height: 100%;
+}
+
+.row > div {
+    height: 100%;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: #e7e7e7;
+}
+
+.navbar-brand {
+    left: 50%;
+    /* 50% of your logo width */
+    display: block;
+    background: url("../assets/img/logo.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-size: contain;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar-icon {
+    position: absolute;
+    left: 15%;
+    display: block;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+
+/* link */
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 2pt;
+    color: #4d4d4d;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 15vh;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.photoright {
+    background: url("../assets/img/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100%
+}
+
+header {
+    text-align: left;
+    background-repeat: no-repeat;
+    height: 100%
+}
+
+header .container {
+    padding-top: 10vh;
+}
+
+header .topped {
+    margin-top: 40vh;
+    padding: 5%;
+}
+
+header .intro-text .welcome {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    letter-spacing: -0.0625em;
+    line-height: 1em;
+}
+
+header .intro-text .price {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+header .intro-text .marketing {
+    font-size: 1.35em;
+    font-weight: 300;
+    color: #9f9c94;
+    letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        left: 40%;
+        /* 50% of your logo width */
+        display: block;
+        background: url("../assets/img/logo.png");
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        background-size: contain;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .navbar-icon {
+        position: absolute;
+        left: 85%;
+        display: block;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: black;
+}
