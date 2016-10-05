@@ -6,6 +6,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.navbar {
+  position: relative; }
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -65px !important;
+  /* 50% of your logo width */
+  display: block;
+  background: url("../../assets/img/logo.png");
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  background-size: contain;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.navbar-icon {
+  position: absolute;
+  left: 85%;
+  display: block; }
+
 .navbar-nav {
   width: 100%;
   text-align: center; }
@@ -22,11 +45,15 @@ body {
   letter-spacing: 2pt;
   color: #4d4d4d;
   padding-left: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  padding-top: 15vh;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear; }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: blue; }
+  color: red; }
 
 header {
   text-align: center;
@@ -34,11 +61,10 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 100vh; }
+  height: 80vh; }
 
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px; }
+  padding-top: 30vh; }
 
 header img {
   display: block;
@@ -48,19 +74,24 @@ header .intro-text .welcome {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 4.75em;
-  letter-spacing: -0.0825em;
+  font-size: 6em;
+  letter-spacing: -0.0625em;
   line-height: 1em; }
 
-header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300; }
+header .intro-text .season {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.6em;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  padding: 20px; }
 
 @media (min-width: 768px) {
-  header .container {
-    padding-top: 200px;
-    padding-bottom: 100px; }
   header .intro-text .welcome {
     font-size: 6.75em; }
-  header .intro-text .skills {
-    font-size: 1.75em; } }
+  header .intro-text .marketing {
+    font-size: 1.35em;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.3em; } }
